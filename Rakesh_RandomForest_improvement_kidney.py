@@ -1,4 +1,5 @@
-# Random Forest Classification
+###This program compares the accuracy of the dataset in prediction using Random Forest vs. Improved Weighted voting in RF 
+###based on the prediction accuracy of each tree in CV set
 
 # Importing the libraries
 import numpy as np
