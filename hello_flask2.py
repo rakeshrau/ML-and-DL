@@ -1,3 +1,6 @@
+##This program launches an html file on hitting a url and takes user input in the form of Component and Headline.It runs a querry on 
+### third party tool cdets and get all the data from it which matches the query. Natural Language processing is done on this data
+###followed by Neural Network using ANN
 from __future__ import absolute_import
 from __future__ import print_function
 from flask import Flask, render_template,request
