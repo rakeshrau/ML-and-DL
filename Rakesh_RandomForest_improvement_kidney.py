@@ -1,5 +1,6 @@
-###This program compares the accuracy of the dataset in prediction using Random Forest vs. Improved Weighted voting in RF 
-###based on the prediction accuracy of each tree in CV set
+###This program compares the accuracy of the dataset in prediction using Random Forest vs. Proposed Improved Weighted voting in RF 
+###based on the prediction accuracy of each tree in Cross Validation set. 
+###A paper for the same is published https://www.onlinejournal.in/IJIRV3I11/006.pdf
 
 # Importing the libraries
 import numpy as np
