@@ -268,8 +268,8 @@ def duplicate():
         model = load_model('cdets.h5',custom_objects={'contrastive_loss' : contrastive_loss})
         #model = load_model('cdets_lower.h5',custom_objects={'contrastive_loss' : contrastive_loss})
         df['is_duplicate'] = model.predict([X_test[:,0,:], X_test[:,1,:]], batch_size=128)
-        #df=df.sort_values(['is_duplicate'],ascending=[True])
-        op =  [df.iloc[i,1] for i in range(num_test) if list(df['is_duplicate'])[i] <= 0.5]
+        df.sort_values(by = 'is_duplicate' ,inplace = True, ascending=True)
+        op = [df.iloc[i,1] for i in range(num_test) if df.iloc[i,2] <= 0.5]
         #op = list(df.iloc[0:5,2].values)
         return render_template("myfile.html", output=op) #replace result with 5 similar bugs
         del op
