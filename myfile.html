@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CDETS - Cisco Defect and Enhancement Tracking System</title>
+</head>
+
+<body style="background-color:#D3E4F8;" >
+	<img src="/static/ciscologo.png" width="128" height="128"> 
+
+    <p><b>CDETS</b><br><b>Cisco Defect and Enhancement Tracking System</b></p>
+	<form method="POST" action=".">
+		Component:<br>
+		<input type="text" name="Component" value="" /><br><br><br>
+		Headline:<br>
+		<input type="text" name="Headline" value="" size="100" /><br><br><br>
+		<input type="submit"  value="Check"><br><br><br>
+
+	</form>
+	{% if output %}
+		<h4>The similar bugs are:</h4><br>
+		{% for out in output %}
+			{{ out }}<br>
+		{% endfor %}
+
+	{% endif %}
+	
+</body>
+
+</html>
