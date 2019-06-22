@@ -8,3 +8,7 @@
 
 
 ###contract_renewal_new.py,contract_ann.py Predicting whether service contract will be renewed 
+
+### qrm.py Predicts whether an engagement will result in success or failure before starting an engagement based on past data.Uses XGBoost,GridSearchCV and also Random Forest was tried
+
+### sentiments.py From the annual pulse survey for the company all the comments were collected and sentiment was determined(Positive,Negative or Neutral). Also all the comments were categorized on the basis of most common issues. In the end a Bar graph is plotted using Seaborn for both Sentiments and categorization of most common issues. 
